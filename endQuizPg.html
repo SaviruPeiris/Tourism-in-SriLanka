@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End!</title>
+    <link rel="stylesheet" href="1stQuizPg.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"> 0 </h1>
+            <form class="end-form-container">
+                <h2 id="end-text"> Enter your name below to save your score! </h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)"> Save </button>
+            </form>
+            <a href="Quiz.html" class="btn"> Play Again! </a>
+            <a href="1stQuizPg.html" class="btn"> Go Home <i class='bx bxs-home'></i> </a>
+        </div>
+    </div>
+    <script src="endQuizPg.js"></script>
+    
+</body>
+</html>

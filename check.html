@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <link rel="stylesheet" type="text/css" href="csscheck.css">
+</head>
+<body>
+    <div class="container">
+        <div class="paynow">
+            <h2>Ready to pay!!</h2>
+            <!-- <p>You are about to complete the payment process.</p>
+            <p>If you are sure about this payment click on "Pay now" button.</p> -->
+            <button type="submit" class="btn" onclick="openPopup()">Pay now</button>
+        </div>
+        <div class="popup" id="popup">
+            <img src="Images/tick3.png" alt="">
+            <h2>Thank You!</h2>
+            <p>Thank you for purchasing.</p>
+            <p>Your payment was successful.</p>
+            <!-- <button type="button" onclick="colsePopup()">OK</button> -->
+            <a href="front.html"  onclick="colsePopup()">OK</a>
+        </div>
+    </div>
+
+
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+</body>
+</html>

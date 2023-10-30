@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cssfront.css">
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https: //fonts. googleapis.com/css2?family=Paytone+One&
+    family=Poppins:wght@100;200;300;400;500;600;700;800;9008display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <!-- <a href="#" class="logo">Travel</a> -->
+        <img src="Images/537474_19213667_3502989_20758751_image.jpg" height="90" width="160">
+        <div class="bx bx-menu" id= "menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="presentation.html">Home</a></li>
+            <li><a href="CommentsForm.html">Comments</a></li>
+            <li><a href="front.html">Shop</a></li>
+            <li><a href="1stQuizPg.html">Quiz</a></li>
+            <li><a href="Imagegallery.html">Gallery</a></li>
+            <li><a href="Sitemap.html">Site Map</a></li>
+            <li><a href="Members.html">About Us</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Buy Products...</h1>
+                <p>We can give you something,</p>
+                <p>That you will remember forever...</p>
+            </div>
+            <div class="col">
+                <div class="card card1">
+                    <!-- <img src="sl.jpg" alt="" class="coimg"> -->
+                    <a href="wdd_cw1.html">
+                        <h5>SRI LANKA</h5>
+                    </a>
+                </div>
+                <div class="card card2">
+                    <a href="maldives.html">
+                        <h5>MALDIVES</h5>
+                    </a>
+                </div>
+                <div class="card card3">
+                    <a href="indo.html">
+                        <h5>INDONESIA</h5>
+                    </a>
+                </div>
+                <div class="card card4">
+                    <a href="ausi.html">
+                        <h5>AUSTRALIA</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer--->
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="list">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="#">No32/1 Pipe Street</a></li>
+                        <li><a href="#">Bambalapitiya Colombo 4</a></li>
+                        <li><a href="#">+94 776090211</a></li>
+                        <li><a href="#">info@mydomain.com</a></li>
+                        <li><a href="#">+94 6876890</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://twitter.com/home"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="end-text">
+                <p>Copyright All rights reserved | Made by Saviru Peiris</p>
+            </div>
+        </div>
+       </section>
+
+       <script>
+        const header = document.querySelector("header");
+        window.addEventListener("scroll",function(){
+            header.classList.toggle("sticky",window.scrollY>0);
+        })
+        
+        let menu=document.querySelector('#menu-icon');
+        let navbar=document.querySelector('.navbar');
+        
+        menu.onclick=() =>{
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        };
+        
+        window.onscroll=()=>{
+            menu.classList.remove('bx-x');
+            navbar.classList.remove('open');
+        }
+        </script>
+</body>
+</html>

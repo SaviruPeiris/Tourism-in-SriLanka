@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color: #fd4646;
+    --text-color: black;
+    --bg-color: white;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(front1.jpg); */
+    background-image: url("Images/front1.jpg");
+    /* background-image: linear-gradient(rgba(174, 185, 178, 0.7),rgba(0, 0, 0, 0.7)),url(bg4.jpg); */
+    /* background-image: linear-gradient(rgba(191, 198, 201, 0.7)0%,rgba(0, 0, 0, 0.859)100%); */
+    background-position: center;
+    background-size: cover;
+    padding-left: 10%;
+    
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    font-size: 50px;
+    color: rgb(208, 224, 224);
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+    color: azure;
+}
+.card{
+    width: 265px;
+    height: 220px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* margin: 20px 16px; */
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    position: relative;
+    margin-top: 40px;
+    margin-right: 20px;
+    
+}
+.card:hover{
+    /* transform: translateY(-10px); */
+    filter: grayscale(0%);
+}
+.card1{
+    background-image: url("Images/image.jpg");
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+}
+.card2{
+    background-image: url("Images/mald.jpg");
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+}
+.card3{
+    background-image: url("Images/indo.jpg");
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+}
+.card4{
+    background-image: url("Images/pexels-munzir-7088958.jpg");
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+}
+.card h5{
+    text-align: center;
+    font-size: 50px;
+    color: rgba(155, 179, 184, 0.99);
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
